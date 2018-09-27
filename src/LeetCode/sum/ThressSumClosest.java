@@ -5,7 +5,28 @@ package LeetCode.sum;
 //Given array nums = [-1, 2, 1, -4], and target = 1.
 //The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
-public class ThressSumClosest {
+import java.util.Arrays;
 
+public class ThressSumClosest {
+    public int threeSumClosest(int[] num, int target){
+        Arrays.sort(num);
+        int result = num[0] + num[1] +num[num.length-1];
+        for(int i=0;i<num.length-2;i++){
+            int lo = i+1, hi = num.length-1;
+            while(lo<hi){
+                int sum = num[i]+num[lo]+num[hi];
+                if(sum>target){
+                    hi--;
+                }else{
+                    lo++;
+                }
+                if(Math.abs(sum-target)<Math.abs(result-target)){
+                    result = sum;
+                }
+            }
+        }
+
+        return result;
+    }
 
 }
