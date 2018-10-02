@@ -1,6 +1,6 @@
 package LeetCode.LinkedList;
 
-//Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+//82. Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
 //
 //        Example 1:
 //
@@ -12,6 +12,7 @@ package LeetCode.LinkedList;
 //        Output: 2->3
 
 public class RemoveDuplicatesII {
+
     
 
 
