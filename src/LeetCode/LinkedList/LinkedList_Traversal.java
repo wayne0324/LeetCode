@@ -24,9 +24,11 @@ public class LinkedList_Traversal {
         list.head = new Node(1);
         Node second = new Node(2);
         Node third = new Node(3);
+        Node curr = list.head;
 
         list.head.next = second;
         second.next = third;
+        curr.next = third;
         System.out.println(list.head.next.next.val+"  "+second.next.val);
 
 
