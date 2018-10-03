@@ -13,16 +13,41 @@ package LeetCode.LinkedList;
 
 public class RemoveDuplicatesII {
 
-    
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode dummyNode = new ListNode(0);
+        ListNode curr = head, pre = dummyNode; // pre = dummyNode rather than head!!
+        dummyNode.next = head;
+
+        while (curr != null && curr.next != null) {
+
+            if (curr.val != curr.next.val) {
+                pre = curr;
+                curr = curr.next;
+            } else {
+
+                while (curr.next != null && curr.val == curr.next.val) {   //if switch items on both sides of &&, there will be null pointer error
+
+                    curr = curr.next;
+                }
+                if (curr != null) {
+                    pre.next = curr.next;
+                    curr = curr.next;
+                }
+            }
+
+        }
+        return dummyNode.next;
+
+    }
 
 
-
-
-
-    class ListNode{
+    class ListNode {
         int val;
         ListNode next;
-        ListNode(int x) {val = x;}
+
+        ListNode(int x) {
+            val = x;
+        }
 
     }
 }
