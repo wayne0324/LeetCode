@@ -14,16 +14,19 @@ import java.util.PriorityQueue;
 //        2->6
 //        ]
 //        Output: 1->1->2->3->4->4->5->6
+
+/** Looking illustration in OneNote */
+
 public class MergeKSortedList {
     public ListNode mergeKLists(ListNode[] lists) {
-        if (lists==null||lists.length==0) return null;
+        if (lists == null || lists.length == 0) return null;
 
-        PriorityQueue<ListNode> queue= new PriorityQueue<ListNode>(lists.length,new Comparator<ListNode>(){
+        PriorityQueue<ListNode> queue = new PriorityQueue<ListNode>(lists.length, new Comparator<ListNode>() {
             @Override
-            public int compare(ListNode o1,ListNode o2){
-                if (o1.val<o2.val)
+            public int compare(ListNode o1, ListNode o2) {
+                if (o1.val < o2.val)
                     return -1;
-                else if (o1.val==o2.val)
+                else if (o1.val == o2.val)
                     return 0;
                 else
                     return 1;
@@ -31,20 +34,28 @@ public class MergeKSortedList {
         });
 
         ListNode dummy = new ListNode(0);
-        ListNode tail=dummy;
+        ListNode tail = dummy;
 
-        for (ListNode node:lists)
-            if (node!=null)
+        for (ListNode node : lists) {
+            if (node != null)
                 queue.add(node);
+            System.out.println("node.val =  " + node.val);
+        }
 
-        while (!queue.isEmpty()){
-            tail.next=queue.poll();
-            tail=tail.next;
 
-            if (tail.next!=null)
+        while (!queue.isEmpty()) {
+            tail.next = queue.poll();
+            tail = tail.next;
+            System.out.println("tail.val = " + tail.val);
+
+            if (tail.next != null) {
+                System.out.println("tail.next.val = " + tail.next.val);
                 queue.add(tail.next);
+            }
         }
         return dummy.next;
+
+
     }
 
     class ListNode{
@@ -52,5 +63,6 @@ public class MergeKSortedList {
         ListNode next;
         ListNode(int x){val = x;}
     }
-
 }
+
+
