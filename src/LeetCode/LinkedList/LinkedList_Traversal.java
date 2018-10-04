@@ -29,7 +29,7 @@ public class LinkedList_Traversal {
         list.head.next = second;
         second.next = third;
         curr.next = third;
-        System.out.println(list.head.next.next.val+"  "+second.next.val);
+//        System.out.println(list.head.next.next.val+"  "+second.next.val);
 
 
         System.out.println(list.head.next.next+"  "+second.next);
