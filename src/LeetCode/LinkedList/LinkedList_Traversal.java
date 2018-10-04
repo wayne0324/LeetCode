@@ -1,18 +1,16 @@
 package LeetCode.LinkedList;
 
+import LeetCode.LinkedList.ListCycleII.ListNode;
+
 
 public class LinkedList_Traversal {
 
-    Node head;
+    ListNode head;
 
-    static class Node{
-        int val;
-        Node next;
-        Node(int x){ val = x; next = null;}
-    }
+
 
     public void printList(){
-        Node n = head;
+        ListNode n = head;
         while(n!=null){
             System.out.println(n.val+" ");
             n = n.next;
@@ -21,18 +19,19 @@ public class LinkedList_Traversal {
 
     public static void main(String[] args) {
         LinkedList_Traversal list = new LinkedList_Traversal();
-        list.head = new Node(1);
-        Node second = new Node(2);
-        Node third = new Node(3);
-        Node curr = list.head;
+
+        list.head = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = list.head;
+//        Node second = new Node(2);
+//        Node third = new Node(3);
+//        Node curr = list.head;
 
         list.head.next = second;
-        second.next = third;
-        curr = third.next.next;
-//        System.out.println(list.head.next.next.val+"  "+second.next.val);
+        second.next= third;
 
-
-        System.out.println(list.head.next.next+"  "+second.next);
+        ListCycleII listCycleII = new ListCycleII();
+        listCycleII.detectCycle_twoPointers(list.head);
     }
 
 
