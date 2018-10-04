@@ -1,15 +1,19 @@
 package LeetCode.LinkedList;
 
-public class ListCycle {
-    public boolean hasCycle_twoPointers(ListNode head) {
-        ListNode slow = head, fast = head.next;
+import java.util.HashSet;
+import java.util.Set;
 
-        if(slow == null || fast == null){
+public class ListCycle {
+    public boolean hasCycle(ListNode head) {
+
+
+        if(head == null || head.next == null){   //In case list is empty. (ex: given [])
             return false;
         }
+        ListNode slow = head, fast = head.next;
 
         while(slow != fast) {
-            if(fast == null){
+            if(fast == null || fast.next == null){
                 return false;
             }
 
@@ -21,9 +25,19 @@ public class ListCycle {
 
     }
 
-//    public boolean hasCycle_hashTable(ListNode head){
-//
-//    }
+    public boolean hasCycle_hashTable(ListNode head){
+
+        Set<ListNode> repeatedNode = new HashSet<>();
+        while(head != null){
+            repeatedNode.add(head);
+            head = head.next;
+            if(repeatedNode.contains(head)){
+                return true;
+            }
+        }
+        return false;
+
+    }
 
     class ListNode{
         int val;
