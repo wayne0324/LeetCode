@@ -27,19 +27,15 @@ public class ReverseLinkedList {
 
 
     public ListNode reverseList_recursively(ListNode head) {
+
         if(head == null||head.next==null){
-        return head;
-        }
-        else{
-            reverseList_recursively(head.next);
-            head.next.next = head;
-            head.next = null;
+            return head;
         }
 
-
-        return head;
-
-
+        ListNode p=reverseList_recursively(head.next);
+        head.next.next = head;
+        head.next = null;
+        return p;
 
     }
 
