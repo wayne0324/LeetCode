@@ -36,7 +36,7 @@ package LeetCode.Stack;
 //        Note:
 //        The size of the input list will be between 1 and 1000.
 //        Every integer represented in the list will be between -30000 and 30000.
-
+//        Hint:
 
 import java.util.Stack;
 

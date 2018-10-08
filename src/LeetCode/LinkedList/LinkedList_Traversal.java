@@ -1,11 +1,11 @@
 package LeetCode.LinkedList;
-
-import LeetCode.LinkedList.ListCycleII.ListNode;
-
+import LeetCode.LinkedList.ListNode;
+//import LeetCode.LinkedList.ListCycleII.ListNode;
+import LeetCode.LinkedList.ReverseLinkedList;
 
 public class LinkedList_Traversal {
 
-    ListNode head;
+    LeetCode.LinkedList.ListNode head;
 
 
 
@@ -22,16 +22,22 @@ public class LinkedList_Traversal {
 
         list.head = new ListNode(1);
         ListNode second = new ListNode(2);
-        ListNode third = list.head;
-//        Node second = new Node(2);
-//        Node third = new Node(3);
+        ListNode third = new ListNode(3);
+        ListNode fourth = new ListNode(4);
+        ListNode fifth = new ListNode(5);
 //        Node curr = list.head;
 
         list.head.next = second;
         second.next= third;
+        third.next = fourth;
+        fourth.next = fifth;
 
-        ListCycleII listCycleII = new ListCycleII();
-        listCycleII.detectCycle_twoPointers(list.head);
+//        ListCycleII listCycleII = new ListCycleII();
+//        listCycleII.detectCycle_twoPointers(list.head);
+        ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+        reverseLinkedList.reverseList_iteratively(list.head);
+
+
     }
 
 
