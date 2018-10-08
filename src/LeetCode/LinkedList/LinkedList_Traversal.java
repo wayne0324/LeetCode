@@ -35,7 +35,12 @@ public class LinkedList_Traversal {
 //        ListCycleII listCycleII = new ListCycleII();
 //        listCycleII.detectCycle_twoPointers(list.head);
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
-        reverseLinkedList.reverseList_iteratively(list.head);
+//        reverseLinkedList.reverseList_iteratively(list.head);
+        ListNode p = reverseLinkedList.reverseList_recursively(list.head);
+        while(p!=null){
+            System.out.println(p.val);
+            p = p.next;
+        }
 
 
     }

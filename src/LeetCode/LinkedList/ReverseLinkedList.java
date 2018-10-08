@@ -1,7 +1,7 @@
 package LeetCode.LinkedList;
 
 public class ReverseLinkedList {
-    public ListNode reverseList(ListNode head) {
+    public ListNode reverseList_iteratively(ListNode head) {
 
         if(head == null||head.next==null){
             return head;
@@ -27,7 +27,19 @@ public class ReverseLinkedList {
 
 
     public ListNode reverseList_recursively(ListNode head) {
-        
+        if(head == null||head.next==null){
+        return head;
+        }
+        else{
+            reverseList_recursively(head.next);
+            head.next.next = head;
+            head.next = null;
+        }
+
+
+        return head;
+
+
 
     }
 
