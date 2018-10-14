@@ -17,7 +17,7 @@ public class FirstUniqueCharacter {
         for(int i=0; i<s.length(); i++){
             counter[s.charAt(i)-'a']++;
         }
-        for(int i=0; i<s.length(); i++){
+        for(int i=0; i<s.length(); i++){    //re-treverse String s, not array counter!!!
             if(counter[s.charAt(i)-'a']==1){
                 return i;
             }
@@ -27,4 +27,4 @@ public class FirstUniqueCharacter {
     }
 }
 
-}
+
