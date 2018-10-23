@@ -18,4 +18,30 @@ package LeetCode.DynamicProgramming;
 
 public class MinCostClimbingStairs {
 
+//    Solution #1: Bottom-Up dynamic programming
+//
+//    Let dp[i] be the minimum cost to reach the i-th stair.
+//
+//    Base cases:
+//
+//    dp[0]=cost[0]
+//    dp[1]=cost[1]
+//
+//    DP formula:
+//
+//    dp[i]=cost[i]+min(dp[i-1],dp[i-2])
+//
+//    Note: the top floor n can be reached from either 1 or 2 stairs away, return the minimum.
+
+    public int minCostClimbingStairs(int[] cost) {
+        int[] dp = new int[cost.length];
+        dp[0] = cost[0];
+        dp[1] = cost[1];
+
+        for(int i = 2; i<cost.length;i++){
+            dp[i] = cost[i] + Math.min(dp[i-1],dp[i-2]);
+        }
+        return Math.min(dp[cost.length-2],dp[cost.length-1]);
+
+    }
 }
