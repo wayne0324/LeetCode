@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c997394-0640-4b54-b7a2-c213f5af3961" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/AddTwoNumbers$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/AddTwoNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/LinkedList_Delete$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/LinkedList_Delete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/LinkedList_Inserting$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/LinkedList_Inserting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/LinkedList_Traversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/ListCycle$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/ListCycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/MergeKSortedList$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/MergeKSortedList$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/MergeKSortedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/MergeTwoSortedList$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/MergeTwoSortedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/MergeTwoSortedLists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/RemoveDuplicatesI$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/RemoveDuplicatesI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/RemoveDuplicatesII$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/LinkedList/RemoveDuplicatesII.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/sum/FourSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/sum/ThreeSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/sum/ThressSumClosest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/sum/TwoSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/DynamicProgramming/MinCostClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/DynamicProgramming/MinCostClimbingStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/BinaryTree/MergeTwoBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/Tree/BinaryTree/MergeTwoBinaryTrees.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,13 +15,13 @@
     <session id="-1418634488">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="8" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="8" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -113,24 +88,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LeetCode/LinkedList/MergeTwoSortedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LeetCode/Arrays/Anagram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Arrays/FirstUniqueCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -139,11 +96,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/DynamicProgramming/MinCostClimbingStairs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+            <state relative-caret-position="303">
+              <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LeetCode/Tree/BST/LowestCommonAncestorBST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LeetCode/LinkedList/LinkedList_Delete.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -294,6 +269,21 @@
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="DynamicProgramming" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+              <item name="BST" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -305,7 +295,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539560105255" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540266275622" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ForFun/java_curl" />
   </component>
   <component name="RunDashboard">
@@ -355,7 +345,7 @@
       <workItem from="1538171720211" duration="233000" />
       <workItem from="1538171972683" duration="20161000" />
       <workItem from="1538756741295" duration="17933000" />
-      <workItem from="1539738856580" duration="2458000" />
+      <workItem from="1539738856580" duration="3663000" />
     </task>
     <task id="LOCAL-00001" summary="newclass">
       <created>1537736554219</created>
@@ -374,7 +364,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31845000" />
+    <option name="totallyTimeSpent" value="33050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="94" y="11" width="1506" height="768" extended-state="0" />
@@ -523,7 +513,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/Interview Questions/VISA/solution.java" />
     <entry file="file://$USER_HOME$/Desktop/Interview Questions/VISA/visaOA/RemoveCho.java" />
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/BinaryTree/MergeTwoBinaryTrees.java">
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/Tree/BinaryTree/MergeTwoBinaryTrees.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
@@ -555,13 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/LinkedList/LinkedList_Delete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -649,10 +632,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/LinkedList/LinkedList_Delete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/DynamicProgramming/MinCostClimbingStairs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        <state relative-caret-position="303">
+          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/Tree/BST/LowestCommonAncestorBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
