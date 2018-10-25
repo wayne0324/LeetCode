@@ -26,14 +26,35 @@ import java.util.*;
 public class LongestSubstringWithoutRepeat {
 
     public static void main(String[] args) {
-        String s="aabbcc";
+        String s="aabcbcc";
         LongestSubstringWithoutRepeat longestSubstringWithoutRepeat = new LongestSubstringWithoutRepeat();
-        longestSubstringWithoutRepeat.lengthOfLongestSubstring(s);
+        longestSubstringWithoutRepeat.lengthOfLongestSubstring_hashset(s);
 
 
     }
 
-    public int lengthOfLongestSubstring(String s) {
+
+    public int lengthOfLongestSubstring_hashset(String s){
+        int n = s.length();
+        int i = 0, j=0, ans =0;
+
+        Set<Character> set = new HashSet<>();
+        while(i<n&&j<n){
+            if(!set.contains(s.charAt(j))){
+                set.add(s.charAt(j++));
+            }else {
+                set.remove(s.charAt(i++));
+            }
+
+            ans = Math.max(j-i, ans);
+
+        }
+        System.out.println(ans);
+        return ans;
+
+    }
+
+    public int lengthOfLongestSubstring_hashmap(String s) {
         int n = s.length(), ans = 0;
         Map<Character, Integer> map = new HashMap<>(); // current index of character
         // try to extend the range [i, j]
