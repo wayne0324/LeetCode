@@ -19,6 +19,8 @@ package LeetCode.ArrayorString;
 //        Explanation: The answer is "wke", with the length of 3.
 //        Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
+// Window Slide 方法， window是从前面重复的最后一个一直到后面重复的第一个； subsequence可以不连着，但是substring一定是要连着（abcccccd中abd是subsequence, abc,cd是substring)
+// aaaabcdeffffff
 
 import java.util.*;
 
@@ -26,9 +28,9 @@ import java.util.*;
 public class LongestSubstringWithoutRepeat {
 
     public static void main(String[] args) {
-        String s="aabcbcc";
+        String s="aabbcc";
         LongestSubstringWithoutRepeat longestSubstringWithoutRepeat = new LongestSubstringWithoutRepeat();
-        longestSubstringWithoutRepeat.lengthOfLongestSubstring_hashset(s);
+        longestSubstringWithoutRepeat.lengthOfLongestSubstring_hashmap(s);
 
 
     }

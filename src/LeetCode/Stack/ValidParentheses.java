@@ -1,4 +1,4 @@
-package LeetCode.ArrayorString;
+package LeetCode.Stack;
 
 //20.Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 //
@@ -29,7 +29,30 @@ package LeetCode.ArrayorString;
 //        Input: "{[]}"
 //        Output: true
 
+import java.util.Stack;
+
 public class ValidParentheses {
+
+    public boolean isValid(String s) {
+
+        Stack<Character> stack = new Stack();
+
+        for(char c:s.toCharArray()){
+            if(c == '('){
+                stack.push(')');
+            }else if(c == '['){
+                stack.push(']');
+            }else if(c =='{'){
+                stack.push('}');
+            }else if(stack.isEmpty()==true || stack.pop()!=c){
+                return false;
+
+            }
+        }
+        return stack.empty();
+
+    }
+
 
     
 }
