@@ -1,7 +1,8 @@
 package LeetCode.LinkedList;
+
 import LeetCode.LinkedList.ListNode;
-//import LeetCode.LinkedList.ListCycleII.ListNode;
 import LeetCode.LinkedList.ReverseLinkedList;
+//import LeetCode.LinkedList.ListCycleII.ListNode;
 
 public class LinkedList_Traversal {
 
