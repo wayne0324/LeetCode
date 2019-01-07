@@ -11,6 +11,8 @@ package LeetCode.ArrayorString;
 //Follow up:
 //Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)
 
+import sun.jvm.hotspot.utilities.Interval;
+
 public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums){
         int n = nums.length;
