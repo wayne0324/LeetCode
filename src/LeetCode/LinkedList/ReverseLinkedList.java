@@ -35,7 +35,7 @@ public class ReverseLinkedList {
         ListNode p=reverseList_recursively(head.next);
         head.next.next = head;
         head.next = null;
-        return p;
+        return p; //return p 的意思是把逆序之后的linkedlist的head return回去
 
     }
 
